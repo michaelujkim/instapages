@@ -1,4 +1,4 @@
-(function($) {
+// (function($) {
 
  var url = "https://api.nytimes.com/svc/topstories/v2/home.json";
   url += '?' + $.param({
@@ -24,6 +24,6 @@
 
 
 
-})(jQuery);
+// })(jQuery);
 
 
