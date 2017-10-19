@@ -1,0 +1,9 @@
+// imported but not included in the stlesheet
+@import 'variables';
+@import 'mixins';
+// Compiled in the stylesheet
+@import 'reset';
+@import 'fonts';
+@import 'globals'; //styles used throughout the site
+@import 'header';
+@import 'footer';
