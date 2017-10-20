@@ -18,46 +18,40 @@
 </head>
 
 <body>
- <div class="container">
-   <header class="topofsite">
-     <div class="timeslogo">
-       <img src="images/nyt-logo.svg" alt="New York Times Logo">
-     </div>
 
-  <form class="drop-down-menu" action="#" method="post">
-    <div class="menu-options">
-      <p>Choose a section:</p>
-      <select name="Sections" id="sections">
-        <option value>Options</option>
-        <option value="home">Home</option>
-        <option value="arts">Arts</option>
-        <option value="business">Business</option>
-        <option value="sports">Sports</option>
-        <option value="technology">Technology</option>
-        <option value="fashion">Fashion</option>
-      </select>
+  <header>
+    <div class="container">
+        <div class="logo">
+            <img src="images/nyt-logo.svg" alt="New York Times Logo">
+        <div><p>Choose a section:</p></div>
+        </div>
+
+    <div class="select">
+        <select name="Sections" id="sections">
+            <option value>Options</option>
+            <option value="home">Home</option>
+            <option value="arts">Arts</option>
+            <option value="business">Business</option>
+            <option value="sports">Sports</option>
+            <option value="technology">Technology</option>
+            <option value="fashion">Fashion</option>
+          </select>
     </div>
- </form>
-  <section class="list-items-inside-flexbox-when-section-clicked">
-    <div class="list-item-selector"></div>
-    <img src="images/ajax-loader.gif" alt="Loading..." class="loading-gif">
+    </div>
+  </header>
+
+  <section>
+    <div class="loader">
+        <img src="images/ajax-loader.gif" alt="Loading..." class="loading-gif">
+    </div>
   </section>
-  
-  <footer class="bottom-of-page">
-    <p>&copy; Copyright 2017<span>Instanews</span></p>
+
+  <section class="news-items"></section>
+
+  <footer>
+      <p>&copy; Copyright 2017<span>Instanews</span></p>
   </footer>
-</header>
-
- </div>
-
-
-
-
+</div>
 </body>
-
-
-  <script src="build/js/main.min.js"></script>
-  
-</body>
-
+<script src="build/js/main.min.js"></script>
 </html>

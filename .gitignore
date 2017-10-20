@@ -20,6 +20,6 @@ ehthumbs.db
 *.zip
 # Ignore packages #
 # =============== #
-node_modules/
+
 # Ignore API Keys
 # apikeys
