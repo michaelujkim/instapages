@@ -1,0 +1,17 @@
+
+.loading {
+  width: 160px;
+  height: 160px;
+  background-image: url('../../images/winkyloader.png');
+  animation: winkyloader 3s steps(42) infinite;
+}
+
+@keyframes winkyloader {
+  0% {
+    background-position: 0 0;
+  } 
+ 100% {
+   background-position: 6720px 0;
+ } 
+}
+

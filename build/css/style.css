@@ -57,6 +57,25 @@ body {
 .timeslogo {
   background-image: url("images/nyt-logo.svg"); }
 
+.loading {
+  width: 160px;
+  height: 160px;
+  background-image: url("../../images/winkyloader.png");
+  -webkit-animation: winkyloader 3s steps(42) infinite;
+          animation: winkyloader 3s steps(42) infinite; }
+
+@-webkit-keyframes winkyloader {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 6720px 0; } }
+
+@keyframes winkyloader {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 6720px 0; } }
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
