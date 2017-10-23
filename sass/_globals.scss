@@ -1,10 +1,15 @@
+@media screen and (min-width: 600px ) {
 body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   background-color: black;
   color: #ffffff;
 }
+}
 
-.loading-gif {
-  display: none;
+@media screen and (min-width: 1000px) {
+  
 }

@@ -45,24 +45,64 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  background-color: black;
-  color: #ffffff; }
+@media screen and (min-width: 600px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: black;
+    color: #ffffff; } }
 
-.loading-gif {
-  display: none; }
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px dotted pink; }
 
-.timeslogo {
+.logo {
   background-image: url("images/nyt-logo.svg"); }
 
+.container p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 6%; }
+
 .loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 160px;
   height: 160px;
   background-image: url("../../images/winkyloader.png");
   -webkit-animation: winkyloader 3s steps(42) infinite;
-          animation: winkyloader 3s steps(42) infinite; }
+          animation: winkyloader 3s steps(42) infinite;
+  display: none; }
 
 @-webkit-keyframes winkyloader {
   0% {
@@ -76,6 +116,23 @@ body {
   100% {
     background-position: 6720px 0; } }
 
+.articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+
+.article-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25vw;
+          flex: 1 1 25vw;
+  height: 25vw;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,4 +140,5 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #c2c2c2; }
+  color: #c2c2c2;
+  border: 1px dotted blue; }

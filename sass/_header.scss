@@ -1,4 +1,18 @@
-.timeslogo {
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dotted pink;
+
+}
+.logo {
   background-image: url('images/nyt-logo.svg');
   
+}
+
+.container p {
+  display: flex;
+  justify-content: center;
+  margin: 6%;
 }

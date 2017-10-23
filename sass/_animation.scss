@@ -1,9 +1,12 @@
 
 .loading {
+  display: flex;
+  justify-content: flex-start;
   width: 160px;
   height: 160px;
   background-image: url('../../images/winkyloader.png');
   animation: winkyloader 3s steps(42) infinite;
+  display: none;
 }
 
 @keyframes winkyloader {
