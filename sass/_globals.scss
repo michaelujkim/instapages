@@ -1,15 +1,15 @@
-@media screen and (min-width: 600px ) {
-body {
+.global {
+  @include mobile {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-items: space-between;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   background-color: black;
-  color: #ffffff;
-}
+  color: #fff;
+  height: 100%;
+  }
 }
 
-@media screen and (min-width: 1000px) {
-  
-}
+
