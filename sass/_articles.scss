@@ -1,0 +1,40 @@
+#articles {
+  a {
+      text-decoration: none;
+      color: #fff;
+    }
+}
+
+.articles {
+  @include mobile {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1em;
+  }
+}
+.article-item {
+    @include mobile {
+    flex: 1 1 25vw;
+    height: 25vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+}
+
+.articles {
+  @include desktop {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1em;
+  }
+}
+.article-item {
+  @include desktop {
+    flex: 1 1 25vw;
+    height: 25vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+}

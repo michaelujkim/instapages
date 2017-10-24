@@ -64,6 +64,12 @@ table {
     color: #fff;
     height: 100%; } }
 
+.initial-header {
+  height: 80vh; }
+
+.newheader {
+  height: 20vh; }
+
 @media (min-width: 600px) {
   .container {
     display: -webkit-box;
@@ -96,6 +102,30 @@ table {
   .logo {
     background-image: url("images/nyt-logo.svg"); } }
 
+@media (min-width: 1000px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .container p {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: 6%; } }
+
 .loading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,6 +151,10 @@ table {
     background-position: 0 0; }
   100% {
     background-position: 6720px 0; } }
+
+#articles a {
+  text-decoration: none;
+  color: #fff; }
 
 @media (min-width: 600px) {
   .articles {
@@ -176,4 +210,17 @@ table {
         -ms-flex-align: end;
             align-items: flex-end;
     color: #c2c2c2;
+    padding: 1em; } }
+
+@media (min-width: 1000px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding: 1em; } }

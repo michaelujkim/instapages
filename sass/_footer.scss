@@ -7,3 +7,12 @@ footer {
   padding: 1em;
   }
 }
+
+footer {
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1em;
+  }
+}

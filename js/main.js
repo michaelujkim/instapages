@@ -5,7 +5,9 @@ $(function() {
   $('#sections').on('change', function() {
 
     $('#articles').empty();
-    
+
+   $('#header-change').removeClass("initial-header").addClass("newheader");
+
    $('.loading').show(); // If user clicks on sections drop menu the loader will appear //
 
    var clickon = $('#sections').val(); 
@@ -19,24 +21,24 @@ $.ajax({
     url: apiUrl,
     method: 'GET',
 }).done(function(data) {
+ var storiesWithPicture = data.results.filter(function(article) {
+  return article.multimedia.length;
+}).slice(0,12);
 
-var resultsFromObject = data.results.slice(0,12);
  
-$.each(resultsFromObject, function(index, value) {
+$.each(storiesWithPicture, function(index, value) {
+    var imageUrl = value.multimedia[4].url
+    var abstractText = value.abstract
+    var storyUrl = value.url
 
-    // console.log(value.multimedia);
+    var output = '<a href=' + storyUrl + '>' + '<li class="article-item" style = "background-image:url(' + imageUrl + ')"><p>' + abstractText + '</p></li></a>';
     
-    if( value.multimedia.length){
-        var output = '<div class="article-item" style="background-image:url(';
-        output += value.multimedia[3].url;
-        output += ')">';
-        output += value.abstract;       
-        output += '</div>';
+ 
     
         // "<li>" + value.abstract + '<div class=".news-items" style"background-image:url(' + value.multimedia[4].url + ")'> "</li>"'</div>’);
     
     $('#articles').append(output);
-    }
+    
     
 
 }); // $.each

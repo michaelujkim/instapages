@@ -1,3 +1,9 @@
+.initial-header {
+  height: 80vh;
+}
+.newheader {
+   height: 20vh;
+}
 .container {
   @include mobile {
   display: flex;
