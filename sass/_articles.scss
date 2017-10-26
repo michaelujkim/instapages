@@ -9,32 +9,43 @@
   @include mobile {
   display: flex;
   flex-flow: row wrap;
-  padding: 1em;
+  
+  
   }
 }
 .article-item {
     @include mobile {
     flex: 1 1 25vw;
-    height: 25vw;
+    height: 100vw;
+    width:100vw;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+    position:relative;
   }
 }
 
 .articles {
   @include desktop {
     display: flex;
+    flex-wrap: wrap;
     flex-flow: row wrap;
-    padding: 1em;
+    
+    width:25vw;
   }
 }
 .article-item {
   @include desktop {
     flex: 1 1 25vw;
     height: 25vw;
+    width: 25vw;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
   }
+}
+
+.abstract {
+  background-color:rgba(128,128,128,0.5);
+
 }

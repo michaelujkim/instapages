@@ -3,12 +3,13 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  flex-items: space-between;
+  align-content: space-between;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   background-color: black;
   color: #fff;
   height: 100%;
+  position: relative;
   }
 }
 

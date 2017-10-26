@@ -10,6 +10,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position:relative;
   p {
     display: flex;
     justify-content: center;
@@ -17,15 +18,12 @@
    }
   }
 }
-.logo {
-  @include mobile {
-  background-image: url('images/nyt-logo.svg');
-  }
-}
+
 
 .logo {
   @include mobile {
     background-image: url('images/nyt-logo.svg');
+    position:relative;
   }
 }
 

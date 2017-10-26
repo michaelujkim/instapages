@@ -45,7 +45,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .global {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -57,12 +57,14 @@ table {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    flex-items: space-between;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     background-color: black;
     color: #fff;
-    height: 100%; } }
+    height: 100%;
+    position: relative; } }
 
 .initial-header {
   height: 80vh; }
@@ -70,7 +72,7 @@ table {
 .newheader {
   height: 20vh; }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -84,7 +86,8 @@ table {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    position: relative; }
     .container p {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -94,15 +97,12 @@ table {
               justify-content: center;
       margin: 6%; } }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .logo {
-    background-image: url("images/nyt-logo.svg"); } }
+    background-image: url("images/nyt-logo.svg");
+    position: relative; } }
 
 @media (min-width: 600px) {
-  .logo {
-    background-image: url("images/nyt-logo.svg"); } }
-
-@media (min-width: 1000px) {
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -156,7 +156,7 @@ table {
   text-decoration: none;
   color: #fff; }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .articles {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -164,41 +164,48 @@ table {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    padding: 1em; } }
+            flex-flow: row wrap; } }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .article-item {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 25vw;
             flex: 1 1 25vw;
-    height: 25vw;
+    height: 100vw;
+    width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
-    text-align: center; } }
+    text-align: center;
+    position: relative; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 600px) {
   .articles {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    padding: 1em; } }
+    width: 25vw; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 600px) {
   .article-item {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 25vw;
             flex: 1 1 25vw;
     height: 25vw;
+    width: 25vw;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center; } }
 
-@media (min-width: 600px) {
+.abstract {
+  background-color: rgba(128, 128, 128, 0.5); }
+
+@media (max-width: 600px) {
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -212,7 +219,7 @@ table {
     color: #c2c2c2;
     padding: 1em; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 600px) {
   footer {
     display: -webkit-box;
     display: -ms-flexbox;

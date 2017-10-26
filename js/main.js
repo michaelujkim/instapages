@@ -31,7 +31,7 @@ $.each(storiesWithPicture, function(index, value) {
     var abstractText = value.abstract
     var storyUrl = value.url
 
-    var output = '<a href=' + storyUrl + '>' + '<li class="article-item" style = "background-image:url(' + imageUrl + ')"><p>' + abstractText + '</p></li></a>';
+    var output = '<a href=' + storyUrl + '>' + '<li class="article-item" style = "background-image:url(' + imageUrl + ')"><p  class="abstract">' + abstractText + '</p></li></a>';
     
  
     
